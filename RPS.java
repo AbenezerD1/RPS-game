@@ -47,15 +47,6 @@ public class RPS extends JFrame{
         panel = new RPSPane(playAreaX, playAreaY, FRAME_WIDTH-playAreaX, FRAME_HEIGHT-playAreaY);
         panel.addMouseListener(new Mouse()); 
         
-        // resetButton = new JButton("Reset");
-        // resetButton.addActionListener(new ActionListener(){
-            // @Override
-            // public void actionPerformed(ActionEvent e){
-                // RPS r = new RPS();
-            // }
-        // });
-        // panel.add(resetButton, BorderLayout.SOUTH);
-        
         scoreLabel = new JLabel("Score:  "+0);
         scoreLabel.setFont(new Font("Anton", Font.PLAIN, 30));
         panel.add(scoreLabel, BorderLayout.NORTH);
